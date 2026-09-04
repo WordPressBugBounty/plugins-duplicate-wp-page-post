@@ -1,57 +1,105 @@
 === Duplicate Page and Post ===
 Contributors: arjunthakur, efficientninja
-Tags: duplicate post, duplicate page, clone page, clone post, duplicate custom posts, clone custom post, wordpress page duplicator, wordpress post duplicator, page duplicate, clone page and post,  wp post clone.
+Tags: duplicate post, duplicate page, clone post, clone page, duplicate custom posts
 Requires at least: 3.5
-Tested up to: 6.6.2
-Requires PHP: 5.2.4
-Stable tag: 2.9.5
-Version: 2.9.5
+Tested up to: 7.1
+Requires PHP: 5.6
+Stable tag: 2.9.6
+Version: 2.9.6
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Duplicate post, Duplicate page and Duplicate custom post or clone page and clone post.
+Easily duplicate or clone pages, posts and custom post types with one click. Choose the status, add a title suffix, and edit your new copy.
 
 == Description ==
 
-Duplicate page and post plugin provides functionality to create a clone of page or posts. You can duplicate pages, posts and custom post by single click and it will be saved as draft.
-Duplicate page and post doesn't have a lot of features that other plugins have, but it also is lightning fast by comparison.
+Duplicate pages, posts and custom post types with just one click.
 
-= Major features of this plugin include =
+Duplicate Page and Post makes it easy to create a copy of existing WordPress content without manually recreating the title, content, featured image, custom fields and taxonomies.
 
-* Create a clone of particular page.
-* Create a clone of particular post.
-* Create a clone of particular custom post(CPT).
-* Option to select editor (Classic and Gutenberg)
-* Option to add Post Suffix.
-* Option to add custom text for duplicate link button.
-* Option to select Duplicate Posts Status.
-* Option to Redirect after click on Duplicate.
+Simply use the **Duplicate** option from the WordPress admin area and a new copy of your content will be created. You can then make the required changes to the duplicate without affecting the original post or page.
 
-= Like the plugin? =
-<a href="https://wordpress.org/support/plugin/duplicate-wp-page-post/reviews/?rate=5#new-post">Please Vote</a>, Your votes really make a difference! Thanks.
+The plugin also gives you control over how duplicates are created, including their post status, title suffix and what happens after duplication.
+
+### Key Features
+
+* **One-click duplication** - Quickly create a copy of an existing page, post or supported custom post type.
+* **Duplicate pages and posts** - Create copies of existing WordPress content without starting from scratch.
+* **Custom post type support** - Duplicate supported custom post types along with their associated content.
+* **Choose duplicate status** - Save new duplicates as Draft, Published, Private, Pending or another available status.
+* **Copy post metadata** - Duplicate custom fields and metadata from the original content.
+* **Copy taxonomies** - Preserve categories, tags and supported taxonomy assignments on the duplicate.
+* **Featured image support** - Keep the featured image when creating a duplicate.
+* **Title suffix** - Add custom text to the duplicate title to easily identify the new copy.
+* **Custom duplicate link text** - Choose the text displayed for the duplicate action.
+* **Flexible redirect options** - Choose where to go after creating a duplicate.
+
+Duplicate Page and Post is designed to keep content duplication simple and fast while fitting naturally into the WordPress admin experience.
 
 == Installation ==
 
-The plugin is simple to install:
+1. Install and activate the plugin through the **Plugins** screen in WordPress.
+2. Go to **Settings > Duplicate Page and Post** to configure the plugin.
+3. Open the Pages, Posts or supported custom post type screen.
+4. Hover over the content you want to duplicate.
+5. Click **Duplicate**.
+6. The new copy will be created using the status selected in the plugin settings.
+7. Edit the duplicate as needed.
 
- * Download duplicate-wp-page-post.zip
- * Unzip
- * Upload duplicate-wp-page-post directory to your /wp-content/plugins directory
- * Go to the plugin menu page and activate the plugin
+No additional setup is required.
 
-== Frequently asked questions ==
+== Frequently Asked Questions ==
 
-= How to create the duplicate of a page or a post? =
+= How do I duplicate a page or post? =
 
- 1. Activate the plugin through the 'Plugins' menu in WordPress.
- 2. Then Create New Post/Page Or you can use old one.
- 3. Now go to all pages or all posts page on your dashboard.
- 4. Hover your cursor over any page or any post on dashboard section, you'll see a "Click here to clone" Button.
- 5. After you click on "Duplicate" link, then duplicate post/page will be created and saved as draft, make the changes you wish and hit publish.
+After activating the plugin, go to **Pages**, **Posts**, or a supported custom post type in your WordPress dashboard. Hover over the item you want to duplicate and click **Duplicate**.
 
-= What is the benefit of using this plugin? =
+= Can I duplicate custom post types? =
 
-User can easily duplicate the posts, pages or the custom posts with single click. It saves user's time to re-create the same post or page again.
+Yes. The plugin supports duplication of supported custom post types.
+
+= Can I choose the status of the duplicate? =
+
+Yes. You can choose the status for new duplicates from the plugin settings, including Draft, Published, Private and Pending where supported.
+
+= Will duplicating a post change the original? =
+
+No. The original page or post remains unchanged. The plugin creates a separate copy that you can edit independently.
+
+= Will the duplicate include custom fields and taxonomies? =
+
+The plugin copies the supported post metadata and taxonomy assignments from the original content to the duplicate.
+
+= Can I add text to the duplicate title? =
+
+Yes. You can configure a title suffix in the plugin settings to make duplicated content easier to identify.
+
+= Can I change what happens after duplication? =
+
+Yes. You can configure the redirect behavior after creating a duplicate from the plugin settings.
+
+== Upgrade Notice ==
+
+= 2.9.6 =
+**Recommended update:** This release includes important security fixes, improved authorization and input validation, and compatibility and reliability improvements. Existing plugin settings and content are preserved during the update.
+
+== Changelog ==
+
+= 2.9.6 =
+* Security fixes for SQL injection vulnerabilities.
+* Improved authorization checks when duplicating posts, pages and custom post types.
+* Improved input validation and output escaping.
+* Fixed an activation warning on fresh installations.
+* Preserved existing plugin settings during activation and upgrades.
+* Preserved existing option keys and values when saving plugin settings.
+* Improved post metadata and taxonomy duplication.
+* Added error handling for failed post creation.
+* Fixed settings save behavior and added a success message.
+* Improved compatibility with current WordPress versions.
+* Maintained PHP 5.6-compatible plugin code syntax.
+
+= 2.9.2 and earlier =
+* Previous versions included various improvements, bug fixes and compatibility updates.
 
 == Screenshots ==
 
